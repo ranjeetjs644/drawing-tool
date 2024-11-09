@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.toolbar button {
+    /* black border */
+    background-color: transparent;
+    /* transparent background */
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.toolbar button.active {
+    background-color: #5dc0625b;
+    /* Optional: background when active */
+}
+
+.toolbar button svg {
+    color: black;
+    /* Ensures the icons are black */
+}
+
+.toolbar button:hover {
+    background-color: #5dc0625b;
+    /* Optional: hover effect */
+}
+
+.custom-drawer .ant-drawer-content {
+    height: auto;
+    /* Drawer height will be auto-adjusted to content */
+    max-height: 500px;
+    /* Set a max height to match your example */
+    border-radius: 8px;
+    /* Optional: Rounded corners for a soft look */
+}
+
+.custom-drawer .ant-drawer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.drawer-content {
+    padding: 16px;
+    /* Padding to create space around content */
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.menu-section {
+    padding: 0;
+}
+
+.shortcut {
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+.menuBar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
